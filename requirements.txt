@@ -6,3 +6,4 @@ python-docx
 openpyxl
 streamlit
 convertapi==1.7.0
+pip install --upgrade pip
