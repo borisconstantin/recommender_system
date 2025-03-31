@@ -48,20 +48,13 @@ def main():
 
         recommendations=''
         if submitted :
-            recommendations = model([x.lower() for x in user_topics],
-                                    user_courses_type,
-                                    user_need_certif,
-                                    user_vid_text,
-                                    languages,
-                                    user_pay_certif,
-                                    user_need_discount)[0]
-            links = model([x.lower() for x in user_topics],
-                                    user_courses_type,
-                                    user_need_certif,
-                                    user_vid_text,
-                                    languages,
-                                    user_pay_certif,
-                                    user_need_discount)[1]
+            recommendations, links = model([x.lower() for x in user_topics],
+                                            user_courses_type,
+                                            user_need_certif,
+                                            user_vid_text,
+                                            languages,
+                                            user_pay_certif,
+                                            user_need_discount)
 
             for site, link in zip(recommendations, links):
                 st.image(f'Donnees/sites logo/{site.lower()}.png')
