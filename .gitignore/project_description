@@ -1,0 +1,36 @@
+***************************************************DESCRIPTION*************************************************************
+***************************************************************************************************************************
+
+Le projet consiste à réaliser un système de recommandations de plateformes de e-learning aux utilisateurs désireux de 
+suivre des cours en ligne. 
+Ce système se basera sur le profil de l'utilisateur qui sera déduit des réponses qu'il donnera à un questionnaire.
+Les profils seront ensuites classifiés avec les sites de e-learning qui sont les mieux adaptés.
+
+
+**************************************************WORK PROCESS*************************************************************
+***************************************************************************************************************************
+
+-> Collecte de données d'utilisateurs: En un premier temps nous allons créer un formulaire que nous allons partager afin 
+   ***********************************
+de constituer des profils d'utilisateurs.
+
+-> Collecte des sites de e-learning: Nous allons collecter des données sur des sites de e-learning [domaines de formation,
+   *********************************
+formations certifiantes ou non, formations gratuites ou non, formations vidéos(animations avec voix-off / profs visibles)
+ou texte, temps moyen d'un cours sur la plateforme, langues de formation]
+
+-> Création du jeu de données: Nous allons utiliser les données collectées pour créer un dataset semi-labellisé ; les
+   ***************************
+données labellisées seront celles produites par les utilisateurs ayant indiqué un ou plusieurs sites de e-learning dans
+leurs réponses.
+
+-> Analyse et préparation des données: Nous allons mettre en forme les données collectées avec les techniques d'EDA avec  
+   ***********************************
+python.
+
+-> Construction, entrainement, test, renforcement et validation du modèle
+   ***********************************************************************
+
+-> Déploiement du modèle: Nous allons déployer notre modèle sur internet pour utilisation (éventuellement y ajouter un 
+   **********************
+chatbot pour la récupération des infos des nouveaux utilisateurs)
