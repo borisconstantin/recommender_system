@@ -1,3 +1,4 @@
+pip==25.0.1
 matplotlib==3.6.2
 numpy==1.23.4
 pandas==1.5.1
@@ -6,4 +7,3 @@ python-docx
 openpyxl
 streamlit
 convertapi==1.7.0
-pip install --upgrade pip
