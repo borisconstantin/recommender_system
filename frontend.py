@@ -57,6 +57,7 @@ def main():
                                             user_need_discount)
 
             for site, link in zip(recommendations, links):
+                st.write(site)
                 st.image(f'Donnees/sites logo/{site.lower()}.png')
                 st.success(link)
 
