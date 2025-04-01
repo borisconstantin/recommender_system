@@ -59,6 +59,7 @@ def main():
             for site, link in zip(recommendations, links):
                 site = site.split('.')[0]
                 st.image(f'Donnees/sites logo/{site.lower()}.png')
+                st.write(link)
                 st.link_button(f"Visit '{site}'", link[0])
 
 
