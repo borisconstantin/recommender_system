@@ -3,4 +3,4 @@ pandas==1.5.1
 Pillow==10.2.0
 streamlit
 openpyxl
-numpy
+numpy==2.2.4
