@@ -60,7 +60,7 @@ def main():
                 site = site.split('.')[0]
                 link = f"https://{link[0]}" if "https" not in link[0] else link[0]
                 st.image(f'Donnees/sites logo/{site.lower()}.png')
-                st.link_button(f"Visit {site}", link[0])
+                st.link_button(f"Visit {site}", link)
 
 
 
