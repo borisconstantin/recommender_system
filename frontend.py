@@ -57,8 +57,9 @@ def main():
                                             user_need_discount)
 
             for site, link in zip(recommendations, links):
-                st.image(f'Donnees/sites logo/{site.lower().split('.')[0]}.png')
-                st.link_button("Visit", link[0])
+                site = site.split('.')[0]
+                st.image(f'Donnees/sites logo/{site.lower()[0]}.png')
+                st.link_button(f"Visit {site}", link[0])
 
 
 
