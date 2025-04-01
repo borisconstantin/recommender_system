@@ -7,7 +7,7 @@ ses criteres.
 
 #Importation des librairies
 import pandas as pd
-import numpy as np
+#import numpy as np
 from warnings import filterwarnings
 filterwarnings('ignore')
 import streamlit as st
