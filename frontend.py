@@ -58,9 +58,9 @@ def main():
 
             for site, link in zip(recommendations, links):
                 site = site.split('.')[0]
+                link = f"http://{link[0]}" if "https" not link[0] else link[0]
                 st.image(f'Donnees/sites logo/{site.lower()}.png')
-                st.write(link)
-                st.link_button(f"Visit '{site}'", link[0])
+                st.link_button(f"Visit {site}", link[0])
 
 
 
