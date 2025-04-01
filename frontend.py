@@ -43,7 +43,7 @@ def main():
             if user_pay_certif == 'Yes':
                 user_need_discount = st.sidebar.selectbox("Would you like to get some discount on certificates prices?",need_discount)
 
-        submitted = st.form_submit_button(label='Submit')
+        submitted = st.sidebar.form_submit_button(label='Submit')
 
 
         recommendations=''
