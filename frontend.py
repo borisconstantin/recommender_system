@@ -58,7 +58,7 @@ def main():
 
             for site, link in zip(recommendations, links):
                 st.image(f'Donnees/sites logo/{site.lower()}.png')
-                st.link_button(site, link)
+                st.link_button("Visit", link)
 
 
 
